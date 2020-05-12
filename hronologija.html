@@ -56,21 +56,21 @@
 		</div>
 	</nav>
 
-	<section class="pa3 ph5-ns pt4-ns">
+	<section class="pa3 ph5-ns pt5-ns pb5-ns">
 		<div class="w-main">
-			<h1 class="f2 fw4 mb4 navy">Hronologija</h1>
+			<h1 class="section-title f2 fw4 mt4-ns mb4-ns ml5">Hronologija</h1>
 		</div>
 	</section>
 
 	<div id="timeline"></div>
-	<section class="pa3 ph5-ns pt4-ns template">
+	<section class="ph3 template">
 		<div class="w-main">
-			<div class="source-box flex flex-column flex-row-ns">
-				<div class="w-100 w-25-ns mr2">
-					<h3 class="source-date dib navy f4 fw6"></h3>
+			<div class="source-box pv3 pl4-ns pt5-ns pb4-ns bt b--yellow flex flex-column flex-row-ns">
+				<div class="w-100 w-25-ns mr2 pv3-l">
+					<h3 class="source-date pv2 pv0-ns dib normal f4"></h3>
 				</div>
-				<div class="source-details w-100 w-75-ns">
-					<h3 class="source-title navy f4 fw6"></h3>
+				<div class="source-details w-100 w-75-ns pv3-l">
+					<h3 class="source-title lh-title f4 fw6"></h3>
 					<div class="source-excerpt mv3"></div>
 				</div>
 			</div>
@@ -125,6 +125,7 @@
 			let sectionTemplate = document.querySelector('section.template');
 			sources.forEach(source => {
 			    let section = sectionTemplate.cloneNode(sectionTemplate);
+				section.classList.remove('template');
 				section.querySelector('.source-date').innerText = source.date;
 				section.querySelector('.source-title').innerText = source.title;
 				section.querySelector('.source-excerpt').innerHTML = source.excerpt;
