@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+  	-ms-box-sizing:border-box;
+}
+
+html, body {
+	-webkit-font-smoothing: subpixel-antialiased !important;
+  	-webkit-text-size-adjust: 100%;
+  	-ms-text-size-adjust: 100%;
+  	scroll-behavior: smooth;
+  	-moz-scroll-behavior: smooth;
+  	-webkit-scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	/*font-size: 1.125rem;
+	color: #1B2020;*/
+}
+
+.preload * {
+ 	-webkit-transition: none !important;
+  	-moz-transition: none !important;
+  	-ms-transition: none !important;
+  	-o-transition: none !important;
+}
+
+.w-main {
+	max-width: 70em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.min-h-400 {
+	min-height: 400px;
+}
+
+p {
+	font-size: 1.125rem;
+	color: #4A4A4A;
+}
+
+/*::selection { 
+	background: #FFD400;
+	text-shadow: none;
+}
+
+::-moz-selection { 
+	background: #FFD400;
+	text-shadow: none;
+}
+
+a { 
+	color: #2B59C3;
+}*/
+
+/*----------------------------------*/
+
+#overlay-button {
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+#overlay-button span {
+  width: 5px;
+  background-color: #1B2020;
+  position: relative;
+  display: block;
+  transition: all .1s ease-in-out;
+}
+#overlay-button span:before {
+  top: -8px;
+  visibility: visible;
+}
+#overlay-button span:after {
+  top: 4px;
+}
+#overlay-button span:before, #overlay-button span:after {
+  height: 4px;
+  width: 30px;
+  background-color: #1B2020;
+  position: absolute;
+  content: "";
+  transition: all .1s ease-in-out;
+}
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+}
+input[type=checkbox]:checked ~ #overlay-button span:before {
+  transform: rotate(45deg) translate(3px, 4px);
+  opacity: 1;
+}
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#overlay {
+  	height: fit-content;
+  	background: #B6CBCB;
+  	z-index: 2;
+  	visibility: hidden;
+  	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 87px;
+}
+#overlay.active {
+  visibility: visible;
+}
+#overlay ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+#overlay li:hover {
+	background-color: #ACC3C3;
+}
