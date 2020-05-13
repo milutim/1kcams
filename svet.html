@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Hiljade.kamera.rs - Svet</title>
+		<title>Hiljade.kamera.rs - Priče iz sveta</title>
 		<link rel="icon" type="image/x-icon" href="./assets/hiljadekamlogo-01.svg">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="./style/tachyons.css">
@@ -27,12 +27,12 @@
 		    <img src="./assets/logo.svg">
 		</a>
 		<div id="menu">
-			<a href="index.html">Home</a>
+			<a href="index.html">Početna stranica</a>
 			<a href="hronologija.html">Hronologija</a>
 			<a href="rizici.html">Pretnje</a>
-			<a href="pravo.html">Pravo</a>
-			<a href="svet.html">Svet</a>
-			<a href="mediji.html">Izvori i mediji</a>
+			<a href="pravo.html">Zakon & Društvo</a>
+			<a href="svet.html">Priče iz sveta</a>
+			<a href="mediji.html">Mediji</a>
 		</div>
 		
 		<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
@@ -42,20 +42,21 @@
 
 	<section class="pa3 ph5-ns pt5-ns pb5-ns">
 		<div class="w-main">
-			<h1 class="section-title f2 fw4 mt4-ns mb4-ns ml5">Svet</h1>
+			<h1 class="section-title f2 fw4 mt4-ns mb4-ns ml5">Priče iz sveta</h1>
+			<p class="ml5">Sa tehnologijama pametnog nadzora eksperimentiše se širom sveta, u razvijenim i nerazvijenim zemljama, u demokratskim i represivnim uređenjima podjednako. Međutim, tok daljeg političkog razvoja mogao bi zavisiti od snage građana da se suprotstave nekontrolisanom pokoravanju i nametnu zahtev za poštovanje ljudskih prava i sloboda.</p>
 		</div>
 	</section>
 
-	<div id="timeline"></div>
+	<div id="risks"></div>
 	<section class="ph3 template">
 		<div class="w-main">
-			<div class="source-box pv3 pl4-ns pt5-ns pb4-ns bt b--yellow flex flex-column flex-row-ns">
-				<div class="w-100 w-25-ns mr2 pv3-l">
-					<h3 class="source-date pv2 pv0-ns dib normal f4"></h3>
+			<div class="pv3 pl4-ns pt5-ns pb4-ns bt b--yellow flex flex-column flex-row-ns">
+				<div class="w-100 w-25-ns mr2 pv3-l tc">
+					<img class="risk-image" src="" style="width: 50%;">
 				</div>
-				<div class="source-details w-100 w-75-ns pv3-l">
-					<h3 class="source-title lh-title f4 fw6"></h3>
-					<div class="source-excerpt mv3"></div>
+				<div class="risk-details w-100 w-75-ns pv3-l">
+					<h3 class="risk-title lh-title f4 fw6"></h3>
+					<div class="risk-excerpt mv3"></div>
 				</div>
 			</div>
 		</div>
@@ -71,58 +72,38 @@
 			  }
 			}
 		(function() {
-		    let sources = [{
-				date: "2011.",
-				title: "MUP Srbije i kompanija “Huawei Technologies Co, Ltd” započinju razgovore o projektu “Sigurno društvo”",
-				excerpt: "<p><a href='https://resursi.sharefoundation.info/wp-content/uploads/2019/03/Resenje-MUP-7.3.2019..pdf' target='_blank'>MUP i Huawei razgovaraju</a> “o mogućnostima i unapređenjima informacionog i telekomunikacionog sistema MUP-a kroz izradu rešenja za povećanje opšte bezbednosti građana.”</p><br><p>Razgovori se odvijaju pod okriljem Sporazuma o ekonomskoj i tehničkoj saradnji u oblasti infrastrukture između Vlade Srbije i Vlade NR Kine iz avgusta 2009, koji je potvrđen Zakonom o potvrđivanju Sporazuma o ekonomskoj i tehničkoj saradnji u oblasti infrastrukture između Vlade Srbije i Vlade NR Kine iz 2013.</p>"
+		    let risks = [{
+				image: "./assets/Flag @2x.svg",
+				title: "Sjedinjene Američke Države",
+				excerpt: "<p>Značajne tačke otpora često se nalaze u tehnološki najrazvijenijim sredinama, poput gradova Kalifornije (San Francisko, Berkli, Ouklend) i Masačusetsa (Somervil, Kembridž) gde je upotreba tehnologije prepoznavanja lica zabranjena organima javne vlasti, uključujući policiju. U drugim gradovima, kao što je Detroit, raste svest o opasnostima sistema biometrijskog nadzora po afroameričku zajednicu.</p><p>Pojedine kompanije su odlučile da ne primenjuju ovu tehnologiju pre nego što se uspostavi jasna pravna regulativa. Tako je odbor za etiku kompanije koja snabdeva opremom većinu policijskih službi u SAD, doneo odluku da neće koristiti tehnologiju poređenja lica zbog “ozbiljnih etičkih problema”.</p>"
 			}, {
-				date: "Decembar 2014.",
-				title: "MUP Srbije i Huawei zaključuju Memorandum o razumevanju",
-				excerpt: "Memorandum se odnosi na predloženu saradnju i korake koje je potrebno preduzeti u pogledu realizacije projekta “Sigurno društvo”."
+				image: "./assets/Flag2@2x.svg",
+				title: "Kina",
+				excerpt: "<p>U saradnji sa raznim domaćim korporacijama, Kina već godinama koristi tehnologiju za prepoznavanje lica pa je ovaj sistem u mnogim višemilionskim gradovima već postao sastavni deo svakodnevnog života. Naime, vlasti su još 2015. podržale koncept “sveprisutne, potpuno povezane, uvek uključene i u potpunosti kontrolisane” mreže za video nadzor širom zemlje kao imperativ javne bezbednosti. Dve godine kasnije, izgrađena je baza podataka za prepoznavanje lica koja za nekoliko sekundi može da utvrdi identitet građana u državi koja broji preko milijardu stanovnika.</p><p>Ova tehnologija se koristi za kontrolu identiteta prilikom onlajn plaćanja, na ulazu u javne ustanove – pa čak i u škole – kao i za stalni policijski nadzor građana. Sistem nadzora se “gejmifikuje” osvajanjem i gubitkom društvenog kredita, te javnim sramoćenjem za ulične prekršaje, dok izveštaji organizacija za ljudska prava upozoravaju da se sistem koristi i za nadzor etničkih manjina, poput muslimanske zajednice Ujgura.</p>"
 			}, {
-				date: "Februar 2017.",
-				title: "Sporazum o strateškom partnerstvu za uvođenje Elte tehnologija i rešenja za “bezbedan grad” u sistemima javne bezbednosti između MUP-a i kompanije Huawei",
-				excerpt: "<p><a href='https://resursi.sharefoundation.info/wp-content/uploads/2019/03/Resenje-MUP-7.3.2019..pdf' target='_blank'>Vlada Srbije je prethodno dala saglasnost u decembru 2016.</a></p>"
+				image: "./assets/Flag3@2x.svg",
+				title: "Ujedinjeno Kraljevstvo",
+				excerpt: "<p>U Britaniji je za manje od dve decenije drastično povećan broj kamera na nadzor: od 100 instaliranih kamera 1990. godine do preko četiri miliona u prvoj deceniji 20. veka. Kako se navodi u izveštaju organizacije “Big Brother Watch” objavljenom 2018, savremena tehnologija pametnog nadzora je ipak neuspešna: 98% identifikacija u Londonu su bile pogrešne. U Velsu je tačnost rezultata iznosila svega 9% dok su slike 2.451 neosnovano osumnjičenih osoba ostale u sistemu policije godinu dana.</p><p>S druge strane, zasad najveća pravna pobeda britanskih građana proglašena je u oktobru 2019. godine, kada je parlament podneo predlog zakona kojim bi se uspostavio moratorijum na tehnologiju prepoznavanja lica, dok bi se svako upravljanje, instaliranje i kupovina opreme za analiziranje biometrijskih podataka građana u javnom prostoru smatralo krivičnim delom.</p>"
 			}, {
-				date: "Septembar 2017.",
-				title: "Ministar ministarstva unutrašnjih poslova Nebojša Stefanović: MUP kupuje kamere i softvere za projekat Bezbedan grad od kineske firme Huawei.",
-				excerpt: "<p><a href='http://rs.n1info.com/Vesti/a317159/Stefanovic-Huawei-kamere-i-softveri.html' target='_blank'>Stefanović kaže</a> da će MUP zahvaljujući sistemu kamera imati bolju kontrolu saobraćaja i efikasnije sprečavanje krivičnih dela.</p>"
+				image: "./assets/@2x.svg",
+				title: "Argentina",
+				excerpt: "<p>Slučaj jednog stanovnika Buenos Ajresa pokazao je široj javnosti u Argentini kako tehnologija za prepoznavanje lica može nevinim ljudima da sruči nevolju za vrat. Naime, čoveka je po ulasku u metro zaustavila policija jer su ga pametne kamere identifikovale kao navodnog pljačkaša za kojim se traga već 17 godina. Lažno osumnjičeni je satima ubeđivao policiju da je nevin, a onda su policajci pokušavali da “ubede” kompjuterski program. Na kraju je čovek oslobođen, a po sopstvenim rečima imao je sreće – jer je belac. U jednom sličnom incidentu, pogrešno osumnjičeni muškarac tamnije kože proveo je čitavih šest dana u pritvoru zbog pogrešne identifikacije u sistemu “pametnog” nadzora.</p>"
 			}, {
-				date: "Decembar 2017.",
-				title: "Stefanović kaže da su kamere postavljane širom Beograda kako bi se obnovio sistem video-nadzora.",
-				excerpt: "<p>“Projekat u prvoj fazi podrazumeva zamenu starih kamera novim koje su neuporedivo veće rezolucije i tehničkih mogućnosti. Imaće mogućnost zumiranja, uočavanja tablica, i upotrebu novih softver koji će automatski detektovati tablice, vozila, pa čak ako se pokaže svrsishodno, i u skladu sa zakonom, i prepoznavanje lica”, <a href='http://rs.n1info.com/Vesti/a352417/Stefanovic-o-kamerama-na-ulicama-Beograda.html' target='_blank'>kaže Stefanović.</a></p>"
-			}, {
-				date: "Januar/februar 2019.",
-				title: "Ministar unutrašnjih poslova Nebojša Stefanović i direktor policije Vladimir Rebić kažu da će policija u naredne dve godine u Beogradu instalirati skoro 1000 stacionarnih kamera za video nadzor na 800 lokacija.",
-				excerpt: "<p><a href='http://rs.n1info.com/Vesti/a456247/Stefanovic-Hiljadu-kamera-sa-softverima-za-prepoznavanje-lica-i-tablica.html' target='_blank'>Stefanović kaže</a> i da će te kamere imati softvere za prepoznavanje lica i registarskih tablica, a da će se kamerama postepeno opremati i patrolna vozila, kao i policajci na ulici. Mreža kamera će se potom širiti i na autoput i magistralne puteve.</p><br><p><a href='' target='_blank'>Rebić tvrdi</a> da građani nemaju razloga da sumnjaju da će dolaziti do zloupotrebe podataka.</p>"
-			}, {
-				date: "Septembar 2019.",
-				title: "MUP izrađuje Procenu uticaja obrade na zaštitu podataka o ličnosti korišćenjem sistema video nadzora",
-				excerpt: "<p>U skladu sa novim Zakonom o zaštiti podataka o ličnosti, koji je počeo da se primenjuje u avgustu 2019, <a href='https://www.sharefoundation.info/wp-content/uploads/MUP-Procena-uticaja-obrade-na-zastitu-podataka-o-licnosti-koriscenjem-sistema-video-nadzora.pdf' target='_blank'>MUP izrađuje Procenu</a> koja nije objavljena.</p>"
-			}, {
-				date: "Oktobar 2019.",
-				title: "MUP: Privatnost građana neće biti ugrožena",
-				excerpt: "<p>Primenom inteligentnih kamera sa softverom za otkrivanje i prepoznavanje lica ljudi i registarskih tablica vozila koje će biti postavljene Beogradu neće biti ugrožena privatnost građana, <a href='' target='_blank'>kaže MUP</a>. Navode i da su Povereniku za zaštitu podataka o ličnosti poslali Procenu uticaja obrade podataka o ličnosti korišćenjem sistema video-nadzora.</p>"
-			}, {
-			    date: "November 2019.",
-			    title: "Zajednica poziva MUP da do daljeg obustavi uvođenje sistema za pametan video nadzor",
-				excerpt: "<p>Procenom uticaja nije utvrđeno da je upotreba pametnog video nadzora neophodna zarad javne bezbednosti, niti da je upotreba ovako invazivne tehnologije proporcionalna, imajući u vidu rizike po prava i slobode građana, <a href='https://www.sharefoundation.info/sr/mup-do-daljeg-da-obustavi-uvodenje-sistema-za-pametan-video-nadzor/' target='_blank'>kažu organizacije</a>.</p>"
-			}, {
-			    date: "November 2019.",
-			    title: "Mišljenje Poverenika za informacije od javnog značaja i zaštitu podataka o ličnosti na procenu uticaja MUP-a",
-				excerpt: "<p>Poverenik je u <a href='https://praksa.poverenik.rs/predmet/detalji/FB967E2A-AE57-4B2C-8F11-D2739FD85A9B' target='_blank'>mišljenju</a> utvrdio da procena uticaja na zaštitu podataka o ličnosti korišćenjem sistema video nadzora nije urađena u skladu sa relevantnim odredbama Zakona o zaštiti podataka o ličnosti.</p><br><p>Nevladine organizacije dobijaju dokument o proceni uticaja od Poverenika na osnovu zahteva za pristup informacijama od javnog značaja.</p>"
+				image: "./assets/Flag5@2x.svg",
+				title: "Francuska",
+				excerpt: "<p>Regionalne vlasti na jugu Francuske dozvolile su probno postavljanje sistema za prepoznavanje lica na ulazima dve srednje škole, u okviru projekta čiji je cilj bio opremanje svih škola pametnim nadzorom. Međutim, nekoliko organizacija za ljudska prava, jedan sindikat i jedna organizacija roditelja podneli su zajednički zahtev sudu da se eksperiment zabrani jer, kako su naveli, ovaj preterano intruzivan sistem nije u skladu sa Zakonom o zaštiti podataka o ličnosti. Sud je krajem februara 2020. doneo odluku da prekine projekat regionalnih vlasti, ističući između ostalog da je sistem pametnog nadzora nesrazmeran svrsi kontrole ulaza, dok prethodna saglasnost roditelja nije validna pravna osnova jer nisu bili dovoljno upoznati sa sistemom.</p>"
 			}];
 			
-			let timelineWrapper = document.getElementById('timeline');
+			let sectionWrapper = document.getElementById('risks');
 			let sectionTemplate = document.querySelector('section.template');
-			sources.forEach(source => {
-			    let section = sectionTemplate.cloneNode(sectionTemplate);
+			risks.forEach(risk => {
+			    let section = sectionTemplate.cloneNode(true);
 				section.classList.remove('template');
-				section.querySelector('.source-date').innerText = source.date;
-				section.querySelector('.source-title').innerText = source.title;
-				section.querySelector('.source-excerpt').innerHTML = source.excerpt;
+				section.querySelector('.risk-image').src = risk.image;
+				section.querySelector('.risk-title').innerText = risk.title;
+				section.querySelector('.risk-excerpt').innerHTML = risk.excerpt;
 				
-				timelineWrapper.appendChild(section);
+				sectionWrapper.appendChild(section);
 			});
 		}());
   	</script>
