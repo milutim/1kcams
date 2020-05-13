@@ -45,21 +45,24 @@
 			<h1 class="section-title f2 fw4 mt4-ns mb4-ns ml5">Pravo</h1>
 		</div>
 	</section>
-
-	<div id="timeline"></div>
+	
+    <div id="legal-issues"></div>
 	<section class="ph3 template">
 		<div class="w-main">
-			<div class="source-box pv3 pl4-ns pt5-ns pb4-ns bt b--yellow flex flex-column flex-row-ns">
-				<div class="w-100 w-25-ns mr2 pv3-l">
-					<h3 class="source-date pv2 pv0-ns dib normal f4"></h3>
+			<div class="pv3 pl4-ns pt5-ns pb4-ns bt b--yellow flex flex-column flex-row-ns">
+				<div class="w-100 w-25-ns mr2 pv3-l tc">
+					<img class="issue-image" src="" style="width: 50%;">
 				</div>
-				<div class="source-details w-100 w-75-ns pv3-l">
-					<h3 class="source-title lh-title f4 fw6"></h3>
-					<div class="source-excerpt mv3"></div>
+				<div class="issue-details w-100 w-75-ns pv3-l">
+					<h3 class="issue-title lh-title f4 fw6"></h3>
+					<div class="mv3">
+						<ul class="ml3 yellow-bull-list issue-excerpt"></ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 	<script>
 	function toggleMenu() {
@@ -71,58 +74,30 @@
 			  }
 			}
 		(function() {
-		    let sources = [{
-				date: "2011.",
-				title: "MUP Srbije i kompanija “Huawei Technologies Co, Ltd” započinju razgovore o projektu “Sigurno društvo”",
-				excerpt: "<p><a href='https://resursi.sharefoundation.info/wp-content/uploads/2019/03/Resenje-MUP-7.3.2019..pdf' target='_blank'>MUP i Huawei razgovaraju</a> “o mogućnostima i unapređenjima informacionog i telekomunikacionog sistema MUP-a kroz izradu rešenja za povećanje opšte bezbednosti građana.”</p><br><p>Razgovori se odvijaju pod okriljem Sporazuma o ekonomskoj i tehničkoj saradnji u oblasti infrastrukture između Vlade Srbije i Vlade NR Kine iz avgusta 2009, koji je potvrđen Zakonom o potvrđivanju Sporazuma o ekonomskoj i tehničkoj saradnji u oblasti infrastrukture između Vlade Srbije i Vlade NR Kine iz 2013.</p>"
+		    let issues = [{
+				image: "./assets/Pravni deo 1.svg",
+				title: "Sistem pametnog video nadzora nije zakonit jer nesrazmerno i neselektivno ograničava slobode i ljudska prava, protivno domaćim i međunarodnim standardima i propisima.",
+				excerpt: "<li>Nije jasno definisana <strong>konkretna svrha</strong> za uvođenje ovog sistema. MUP Srbije je kao razloge naveo veću bezbednost građana i efikasniju borbu protiv kriminala, što su suviše opšti i neobavezujući termini da bi se njima mogla opravdati ovako invazivna obrada ličnih podataka.</li><li>Nije utvrđeno da je upotreba ovog sistema <strong>neophodna</strong> za obavljanje poslova nadležnih organa, što je uslov da bi obrada podataka bila zakonita (član 13 Zakona o zaštiti podataka o ličnosti i član 8 Evropske konvencije o ljudskim pravima)</li><li>Pozitivan uticaj na smanjenje kriminala upotrebom ovakve tehnologije je precenjen, a njeno korišćenje <strong>nije srazmerno</strong> rizicima po prava i slobode građana. Srazmernost u odnosu na cilj je uslov za zakonitost obrade (član 14, stav 3 Zakona o zaštiti podataka o ličnosti)</li><li>Masovno korišćenje sistema za pametni video nadzor je nezakonito usled <strong>spornog pravnog osnova</strong> za njegovo uvođenje - ni u jednom zakonu nije definisano da policija ima pravo da koristi masovan pametan video nadzor na javnim mestima.</li><li><strong><a href='https://www.sharefoundation.info/wp-content/uploads/MUP-Procena-uticaja-obrade-na-zastitu-podataka-o-licnosti-koriscenjem-sistema-video-nadzora.pdf'>Procena uticaja</a></strong> na zaštitu podataka o ličnosti koju je izradio MUP <strong><a href='https://www.sharefoundation.info/sr/mup-do-daljeg-da-obustavi-uvodenje-sistema-za-pametan-video-nadzor/'>ne zadovoljava</a></strong> ni formalne ni materijalne uslove propisane zakonom, niti je tu Procenu <strong><a href='https://praksa.poverenik.rs/predmet/detalji/FB967E2A-AE57-4B2C-8F11-D2739FD85A9B'>prihvatio</a></strong> Poverenik. Obaveza izrade procene uticaja i mišljenje Poverenika su propisani članovima 54 i 55 Zakona o zaštiti podataka o ličnosti.</li>"
 			}, {
-				date: "Decembar 2014.",
-				title: "MUP Srbije i Huawei zaključuju Memorandum o razumevanju",
-				excerpt: "Memorandum se odnosi na predloženu saradnju i korake koje je potrebno preduzeti u pogledu realizacije projekta “Sigurno društvo”."
+				image: "./assets/Pravni deo 2.svg",
+				title: "Ceo proces je potpuno netransparentan; nije bilo javne debate na ovu temu i ne postoji društveni dogovor za uvođenje sistema.",
+				excerpt: "<li>Proces nabavke sistema je od početka obavijen <strong>velom tajne</strong>: građani nemaju informacije koja će se konkretno tehnologija koristiti u ove svrhe, kolika je vrednost javne nabavke, koliko će tačno biti kamera i na kojim lokacijama. MUP je <a href='https://www.sharefoundation.info/sr/da-li-su-poznate-lokacije-novih-kamera-za-nadzor-i-rizici-po-ustavna-prava-gradjana/'>odbio</a> brojne zahteve za pristup ovim informacijama.</li><li>Previše je <strong>nedoumica i nelogičnosti</strong> oko korišćenja pametnog video nadzora zbog protivrečnih informacija iz <a href='https://www.sharefoundation.info/wp-content/uploads/MUP-Procena-uticaja-obrade-na-zastitu-podataka-o-licnosti-koriscenjem-sistema-video-nadzora.pdf'>Procene uticaja</a> i <a href='http://rs.n1info.com/Vesti/a456247/Stefanovic-Hiljadu-kamera-sa-softverima-za-prepoznavanje-lica-i-tablica.html'>izjava</a> MUP-ovih zvaničnika u medijima.</li><li>Uvođenje ovakvog sistema predstavlja veliku i značajnu promenu u funkcionisanju svakog društva. Zbog toga je neophodna <strong>javna debata</strong> na ovu temu, kako bi se odmerili svi pozitivni i negativni efekti. Takve debate nije bilo, pa su državne institucije i šira javnost ostali uskraćeni za mišljenja stručnjaka i razmenu argumenata.</li><li>U svetu je primetan <strong><a href='https://nymag.com/intelligencer/2020/01/why-we-should-ban-facial-recognition-technology.html'>rastući trend zabrane ili ograničavanja</a></strong> sistema pametnog nadzora zbog prepoznatih rizika po prava i slobode građana.</li>"
 			}, {
-				date: "Februar 2017.",
-				title: "Sporazum o strateškom partnerstvu za uvođenje Elte tehnologija i rešenja za “bezbedan grad” u sistemima javne bezbednosti između MUP-a i kompanije Huawei",
-				excerpt: "<p><a href='https://resursi.sharefoundation.info/wp-content/uploads/2019/03/Resenje-MUP-7.3.2019..pdf' target='_blank'>Vlada Srbije je prethodno dala saglasnost u decembru 2016.</a></p>"
-			}, {
-				date: "Septembar 2017.",
-				title: "Ministar ministarstva unutrašnjih poslova Nebojša Stefanović: MUP kupuje kamere i softvere za projekat Bezbedan grad od kineske firme Huawei.",
-				excerpt: "<p><a href='http://rs.n1info.com/Vesti/a317159/Stefanovic-Huawei-kamere-i-softveri.html' target='_blank'>Stefanović kaže</a> da će MUP zahvaljujući sistemu kamera imati bolju kontrolu saobraćaja i efikasnije sprečavanje krivičnih dela.</p>"
-			}, {
-				date: "Decembar 2017.",
-				title: "Stefanović kaže da su kamere postavljane širom Beograda kako bi se obnovio sistem video-nadzora.",
-				excerpt: "<p>“Projekat u prvoj fazi podrazumeva zamenu starih kamera novim koje su neuporedivo veće rezolucije i tehničkih mogućnosti. Imaće mogućnost zumiranja, uočavanja tablica, i upotrebu novih softver koji će automatski detektovati tablice, vozila, pa čak ako se pokaže svrsishodno, i u skladu sa zakonom, i prepoznavanje lica”, <a href='http://rs.n1info.com/Vesti/a352417/Stefanovic-o-kamerama-na-ulicama-Beograda.html' target='_blank'>kaže Stefanović.</a></p>"
-			}, {
-				date: "Januar/februar 2019.",
-				title: "Ministar unutrašnjih poslova Nebojša Stefanović i direktor policije Vladimir Rebić kažu da će policija u naredne dve godine u Beogradu instalirati skoro 1000 stacionarnih kamera za video nadzor na 800 lokacija.",
-				excerpt: "<p><a href='http://rs.n1info.com/Vesti/a456247/Stefanovic-Hiljadu-kamera-sa-softverima-za-prepoznavanje-lica-i-tablica.html' target='_blank'>Stefanović kaže</a> i da će te kamere imati softvere za prepoznavanje lica i registarskih tablica, a da će se kamerama postepeno opremati i patrolna vozila, kao i policajci na ulici. Mreža kamera će se potom širiti i na autoput i magistralne puteve.</p><br><p><a href='' target='_blank'>Rebić tvrdi</a> da građani nemaju razloga da sumnjaju da će dolaziti do zloupotrebe podataka.</p>"
-			}, {
-				date: "Septembar 2019.",
-				title: "MUP izrađuje Procenu uticaja obrade na zaštitu podataka o ličnosti korišćenjem sistema video nadzora",
-				excerpt: "<p>U skladu sa novim Zakonom o zaštiti podataka o ličnosti, koji je počeo da se primenjuje u avgustu 2019, <a href='https://www.sharefoundation.info/wp-content/uploads/MUP-Procena-uticaja-obrade-na-zastitu-podataka-o-licnosti-koriscenjem-sistema-video-nadzora.pdf' target='_blank'>MUP izrađuje Procenu</a> koja nije objavljena.</p>"
-			}, {
-				date: "Oktobar 2019.",
-				title: "MUP: Privatnost građana neće biti ugrožena",
-				excerpt: "<p>Primenom inteligentnih kamera sa softverom za otkrivanje i prepoznavanje lica ljudi i registarskih tablica vozila koje će biti postavljene Beogradu neće biti ugrožena privatnost građana, <a href='' target='_blank'>kaže MUP</a>. Navode i da su Povereniku za zaštitu podataka o ličnosti poslali Procenu uticaja obrade podataka o ličnosti korišćenjem sistema video-nadzora.</p>"
-			}, {
-			    date: "November 2019.",
-			    title: "Zajednica poziva MUP da do daljeg obustavi uvođenje sistema za pametan video nadzor",
-				excerpt: "<p>Procenom uticaja nije utvrđeno da je upotreba pametnog video nadzora neophodna zarad javne bezbednosti, niti da je upotreba ovako invazivne tehnologije proporcionalna, imajući u vidu rizike po prava i slobode građana, <a href='https://www.sharefoundation.info/sr/mup-do-daljeg-da-obustavi-uvodenje-sistema-za-pametan-video-nadzor/' target='_blank'>kažu organizacije</a>.</p>"
-			}, {
-			    date: "November 2019.",
-			    title: "Mišljenje Poverenika za informacije od javnog značaja i zaštitu podataka o ličnosti na procenu uticaja MUP-a",
-				excerpt: "<p>Poverenik je u <a href='https://praksa.poverenik.rs/predmet/detalji/FB967E2A-AE57-4B2C-8F11-D2739FD85A9B' target='_blank'>mišljenju</a> utvrdio da procena uticaja na zaštitu podataka o ličnosti korišćenjem sistema video nadzora nije urađena u skladu sa relevantnim odredbama Zakona o zaštiti podataka o ličnosti.</p><br><p>Nevladine organizacije dobijaju dokument o proceni uticaja od Poverenika na osnovu zahteva za pristup informacijama od javnog značaja.</p>"
+				image: "./assets/Pravni deo 3.svg",
+				title: "Ne postoje analize mogućih zloupotreba ovakvog sistema, pa ni garancije da će se one sprečiti.",
+				excerpt: "<li>Već smo bili <a href='https://labs.rs/sr/zadrzavanje-podataka-o-komunikaciji-u-srbiji/'>svedoci</a> nepoštovanja zakona u oblasti <strong>masovnog nadzora nad elektronskim komunikacijama</strong> koje se ogleda u stotinama hiljada neovlašćenih <a href='https://labs.rs/sr/nevidljive-infrastrukture-elektronski-nadzor-i-zadrzavanje-podataka-sa-mobilnih-telefona/'>pristupa zadržanim podacima</a> (telekomunikacionim metapodacima) građana Srbije.</li><li>Postojeći sistem video nadzora se pokazao <strong>beskorisnim</strong> ili se njime <strong>manipulisalo</strong> u nekim od ključnih događaja od interesa za javnost (slučajevi <a href='https://www.kurir.rs/crna-hronika/1774517/sudenje-marku-milicevu-kamere-sa-brankovog-mosta-nisu-snimile-kantrimen'>Kantrimen</a>, <a href='https://insajder.net/sr/sajt/vazno/16469/'>Doljevac</a> itd.)</li><li>Poverljivi lični podaci građana često završavaju u tabloidima ili se na drugi način čine <strong>dostupnim javnosti</strong>, iako se takvi podaci čuvaju isključivo u nadležnim državnim organima (<a href='https://www.poverenik.rs/sr/%D1%81%D0%B0%D0%BE%D0%BF%D1%88%D1%82%D0%B5%D1%9A%D0%B0/3235-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%BA-%D0%BF%D0%BE%D0%B4%D0%BD%D0%B5%D0%BE-%D0%BA%D1%80%D0%B8%D0%B2%D0%B8%D1%87%D0%BD%D1%83-%D0%BF%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D1%83-%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D0%BE%D0%BC-%D0%BE%D0%B1%D1%98%D0%B0%D0%B2%D1%99%D0%B8%D0%B2%D0%B0%D1%9A%D0%B0-%D0%B8%D1%81%D0%BA%D0%B0%D0%B7%D0%B0-%D0%BE%D1%81%D1%83%D0%BC%D1%9A%D0%B8%D1%87%D0%B5%D0%BD%D0%BE%D0%B3-%D0%B7%D0%B0-%D0%BE%D1%82%D0%BC%D0%B8%D1%86%D1%83-%D0%BC%D0%B0%D0%BB%D0%BE%D0%BB%D0%B5%D1%82%D0%BD%D0%B5-%D0%BC-%D0%BA.html'>slučaj otete devojčice</a>, <a href='http://rs.n1info.com/Vesti/a113906/Upotreba-i-zloupotreba-medicinskih-kartona.html'>objavljivanje medicinskih podataka</a>, <a href='https://informer.rs/vesti/politika/468092/ekskluzivni-video-sad-sve-jasno-djilasov-operativac-branko-miljus-direktno-rukovodio-akcijom-paljenja-knjige-gorana-vesica'>curenje podataka sa novih kamera</a> itd.)</li><li>Čak i u slučajevima kada je nesporna odgovornost državnih organa za određene povrede podataka o ličnosti, <strong>izostala je svaka vrsta odgovornosti</strong> (<a href='http://rs.n1info.com/Vesti/a220880/Curenje-podataka-iz-Agencije-za-privatizaciju-zastarelo.html'>Slučaj Agencije za privatizaciju</a>)</li>"
 			}];
 			
-			let timelineWrapper = document.getElementById('timeline');
+			let sectionWrapper = document.getElementById('legal-issues');
 			let sectionTemplate = document.querySelector('section.template');
-			sources.forEach(source => {
-			    let section = sectionTemplate.cloneNode(sectionTemplate);
+			issues.forEach(issue => {
+			    let section = sectionTemplate.cloneNode(true);
 				section.classList.remove('template');
-				section.querySelector('.source-date').innerText = source.date;
-				section.querySelector('.source-title').innerText = source.title;
-				section.querySelector('.source-excerpt').innerHTML = source.excerpt;
+				section.querySelector('.issue-image').src = issue.image;
+				section.querySelector('.issue-title').innerText = issue.title;
+				section.querySelector('.issue-excerpt').innerHTML = issue.excerpt;
 				
-				timelineWrapper.appendChild(section);
+				sectionWrapper.appendChild(section);
 			});
 		}());
   	</script>
