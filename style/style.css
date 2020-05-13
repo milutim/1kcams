@@ -173,6 +173,15 @@ a {
 	width: 1em;
 	margin-left: -2em;
 }
+#legal-issues .yellow-bull-list li {
+	padding: 10px 0;
+}
+#legal-issues .yellow-bull-list li:before {
+	font-size: 24px;
+	font-weight: 900px;
+	margin-left: -1em;
+}
+
 .card-title{
 	font-size: 1.125rem;
 	color: #212121;
