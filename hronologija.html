@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>***X X X***</title>
-		<link rel="icon" type="image/x-icon" href="***X X X***">
-		<link rel="stylesheet" type="text/css" href="./style/style.css">
+		<title>Hiljade.kamera.rs - Hronologija</title>
+		<link rel="icon" type="image/x-icon" href="./assets/hiljadekamlogo-01.svg">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="./style/tachyons.css">
+		<link rel="stylesheet" type="text/css" href="./style/style.css">
 		
 		<meta property="og:title" content="***X X X***" />
 		<meta property="og:image" content=".***X X X***" />
@@ -21,40 +22,23 @@
 		<meta name="twitter:url" content="***X X X***" />
 	</head>
 	<body>
-	<nav class="dt w-100 border-box pa3 ph5-ns bg-yellow">
-  		<a class="link dim w-25" href="index.html" title="Home">
-    		<img src="./assets/logo.svg" class="dib" alt="Site Name">
-  		</a>
-		<div class="dtc-l v-mid w-75 tr dn">
-			<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="hronologija.html" title="Hronologija">Hronologija</a>
-			<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Šta je problem?">Šta je problem?</a>
-			<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Mapa kamera">Mapa kamera</a>
-			<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Aktiviraj se">Aktiviraj se</a>
-			<a class="link dim dark-gray f6 f5-ns dib" href="recnik.html" title="Contact">Rečnik</a>
+	<header class="topnav w-100 border-box">
+		<a href="index.html" class="active">
+		    <img src="./assets/logo.svg">
+		</a>
+		<div id="menu">
+			<a href="index.html">Home</a>
+			<a href="hronologija.html">Hronologija</a>
+			<a href="rizici.html">Pretnje</a>
+			<a href="pravo.html">Pravo</a>
+			<a href="svet.html">Svet</a>
+			<a href="mediji.html">Izvori i mediji</a>
 		</div>
-
-		<div class="dtc v-mid dn-l">
-			
-			<input type="checkbox" id="overlay-input" />
-        	<label for="overlay-input" id="overlay-button"><span></span></label>
-          <div id="overlay">
-            <ul class="pv3 ph5-ns">
-                <div class="ph3 ph4-l pt2">Group
-                  <ul class="pv2">
-                    <li class="ph3 pt2 pb1 dim"><a href="#">Sub group 1</a></li>
-                    <li class="ph3 pt2 pb1 dim"><a href="#">Sub group 2</a></li>
-                    <li class="ph3 pt2 pb1 dim"><a href="#">Sub group 3</a></li>
-                  </ul>
-                </div>
-              <li class="ph3 ph4-l pt2 pb1"><a href="#" class="db dim">Link</a></li>
-              <li class="ph3 ph4-l pt2 pb1"><a href="#" class="db dim">Link</a></li>
-              <li class="ph3 ph4-l pt2 pb1"><a href="#" class="db dim">Link</a></li>
-              <li class="ph3 ph4-l pt2 pb1"><a href="#" class="db">Link</a></li>
-            </ul>
-          </div>
-
-		</div>
-	</nav>
+		
+		<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</header>
 
 	<section class="pa3 ph5-ns pt5-ns pb5-ns">
 		<div class="w-main">
@@ -78,6 +62,16 @@
 	</section>
 
 	<script>
+	
+			function toggleMenu() {
+			  var x = document.getElementById("menu");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+	
 		(function() {
 		    let sources = [{
 				date: "2011.",
@@ -132,6 +126,7 @@
 				
 				timelineWrapper.appendChild(section);
 			});
+			
 		}());
   	</script>
 </body>
