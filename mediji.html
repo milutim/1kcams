@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Hiljade.kamera.rs - Izvori i mediji</title>
+		<link rel="icon" type="image/x-icon" href="./assets/hiljadekamlogo-01.svg">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./style/tachyons.css">
+		<link rel="stylesheet" type="text/css" href="./style/style.css">
+		
+		<meta property="og:title" content="***X X X***" />
+		<meta property="og:image" content=".***X X X***" />
+		<meta property="og:description" content="***X X X***" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@***X X X***" />
+		<meta name="twitter:title" content="***X X X***" />
+		<meta name="twitter:description" content="***X X X***" />
+		<meta name="twitter:image" content="***X X X***" />
+		<meta name="twitter:url" content="***X X X***" />
+	</head>
+	<body>
+	<header class="topnav w-100 border-box">
+		<a href="index.html" class="active">
+		    <img src="./assets/logo.svg">
+		</a>
+		<div id="menu">
+			<a href="index.html">Home</a>
+			<a href="hronologija.html">Hronologija</a>
+			<a href="rizici.html">Pretnje</a>
+			<a href="pravo.html">Pravo</a>
+			<a href="svet.html">Svet</a>
+			<a href="mediji.html">Izvori i mediji</a>
+		</div>
+		
+		<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</header>
+
+	<section class="pa3 ph5-ns pt5-ns pb5-ns">
+		<div class="w-main">
+			<h1 class="section-title f2 fw4 mt4-ns mb4-ns ml5">Izvori i mediji</h1>
+			<p class="ml5">Izbor izveštaja iz medija i analiza zajednice o problemima masovnog nadzora u Srbiji.</p>
+		</div>
+	</section>
+
+	<div id="sections"></div>
+	<section class="ph3 template">
+		<div class="w-main">
+			<div class="source-box pv3 pl4-ns pt5-ns pb4-ns bt b--yellow flex flex-column flex-row-ns">
+				<div class="w-100 w-25-ns mr2 pv3-l">
+					<h3 class="source-category pv2 pv0-ns dib normal f4"></h3>
+				</div>
+				<div class="source-details w-100 w-75-ns pv3-l">
+					<div class="source-links mb3"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+	function toggleMenu() {
+			  var x = document.getElementById("menu");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+		(function() {
+		    let sourceCategories = [{
+				category: "Lokalni mediji",
+				sources: [{
+					source: "Politika",
+					title: "Gde je postavljeno sto novih kamera u Beogradu?",
+					link: "http://www.politika.rs/sr/clanak/426190/Gde-je-postavljeno-sto-novih-kamera-u-Beogradu"
+				},{
+					source: "Blic",
+					title: "Beograđane će narednih godina na ulicama SNIMATI JOŠ 1.000 KAMERA",
+					link: "https://www.blic.rs/vesti/beograd/beogradane-ce-narednih-godina-na-ulicama-snimati-jos-1000-kamera/ph4m512"
+				},{
+					source: "RTS",
+					title: "Šta će i koga snimati 1.000 novih kamera po gradskim ulicama",
+					link: "https://www.rts.rs/page/stories/sr/story/125/drustvo/3415215/sta-ce-i-koga-snimati-1000-novih-kamera-po-gradskim-ulicama.html"
+				},{
+					source: "N1",
+					title: "Huawei već postavio kamere za video nadzor u Beogradu",
+					link: "http://rs.n1info.com/Vesti/a472007/SHARE-Huawei-vec-postavio-kamere-za-video-nadzor-u-Beogradu.html"
+				},{
+					source: "Danas",
+					title: "„MUP do daljeg da obustavi uvođenje sistema za pametan video nadzor“",
+					link: "https://www.danas.rs/drustvo/mup-do-daljeg-da-obustavi-uvodjenje-sistema-za-pametan-video-nadzor/"
+				}]
+			},{
+				category: "Međunarodni mediji",
+				sources: [{
+					source: "(EN) Foreigh Policy",
+					title: "Big Brother Comes to Belgrade",
+					link: "https://foreignpolicy.com/2019/06/18/big-brother-comes-to-belgrade-huawei-china-facial-recognition-vucic/"
+				},{
+					source: "(EN) CBS",
+					title: "Chinese facial recognition tech installed in nations vulnerable to abuse",
+					link: "https://www.cbsnews.com/news/china-huawei-face-recognition-cameras-serbia-other-countries-questionable-human-rights-2019-10-16/"
+				},{
+					source: "(EN) ZDnet",
+					title: "Huawei's surveillance system in Serbia threatens citizens' rights, watchdog warns",
+					link: "https://www.zdnet.com/article/huaweis-surveillance-system-in-serbia-threatens-citizens-rights-watchdog-warns/"
+				}]
+			},{
+				category: "Analize",
+				sources: [{
+					source: "Peščanik (Saša Đorđević)",
+					title: "Javno snimanje tajnim kamerama",
+					link: "https://pescanik.net/javno-snimanje-tajnim-kamerama"
+				},{
+					source: "BFPE (Stefan Vladisavljev)",
+					title: "Da li Kina može postati “Veliki brat” Srbije?",
+					link: "https://bfpe.org/da-li-kina-moze-postati-veliki-brat-srbije/"
+				},{
+					source: "Talas (Zoja Kukić)",
+					title: "Zaštita od kriminala ili ugrožavanje slobode?",
+					link: "https://talas.rs/2019/06/15/kamere-za-prepoznavanje-lica-na-ulicama-beograda/"
+				},{
+					source: "Istinomer (Spasoje Veselinović)",
+					title: "Saga Huavej",
+					link: "https://www.istinomer.rs/analize/saga-huavej/"
+				},{
+					source: "Medium (Marija Gavrilov)",
+					title: "Pod kineskim digitalnim pojasom",
+					link: "https://medium.com/@arijaMGavrilov/pod-kineskim-digitalnim-pojasom-1eca25b14433"
+				}]
+			}];
+			
+			let sectionsWrapper = document.getElementById('sections');
+			let sectionTemplate = document.querySelector('section.template');
+			sourceCategories.forEach(sourceCategory => {
+			    let section = sectionTemplate.cloneNode(sectionTemplate);
+				section.classList.remove('template');
+				section.querySelector('.source-category').innerText = sourceCategory.category;
+				
+				sourceCategory.sources.forEach(source => {
+				let linkHtml = "<p>" + source.source + ": " + "<a href='" + source.link + "'>" + source.title + "</a></p>"
+				    section.querySelector('.source-links').innerHTML += '\n' + linkHtml; 
+				});
+				
+				sectionsWrapper.appendChild(section);
+			});
+		}());
+  	</script>
+</body>
+</html>
