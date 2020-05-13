@@ -63,74 +63,43 @@ a {
 
 /*----------------------------------*/
 
-#overlay-button {
-  z-index: 5;
-  cursor: pointer;
-  user-select: none;
-}
-#overlay-button span {
-  width: 5px;
-  background-color: #1B2020;
+.topnav {
+  overflow: hidden;
+  background-color: white;
   position: relative;
-  display: block;
-  transition: all .1s ease-in-out;
 }
-#overlay-button span:before {
-  top: -8px;
-  visibility: visible;
-}
-#overlay-button span:after {
-  top: 4px;
-}
-#overlay-button span:before, #overlay-button span:after {
-  height: 4px;
-  width: 30px;
-  background-color: #1B2020;
-  position: absolute;
-  content: "";
-  transition: all .1s ease-in-out;
-}
-input[type=checkbox] {
+
+.topnav #menu {
   display: none;
+  border: 1px solid black;
 }
 
-input[type=checkbox]:checked ~ #overlay {
-  visibility: visible;
+.topnav a {
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
 }
 
-input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
-  background: transparent;
-}
-input[type=checkbox]:checked ~ #overlay-button span:before {
-  transform: rotate(45deg) translate(3px, 4px);
-  opacity: 1;
-}
-input[type=checkbox]:checked ~ #overlay-button span:after {
-  transform: rotate(-45deg) translate(5px, -5px);
+.topnav a.icon {
+  display: block;
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-#overlay {
-  	height: fit-content;
-  	background: #B6CBCB;
-  	z-index: 2;
-  	visibility: hidden;
-  	position: absolute;
-	right: 0px;
-	left: 0px;
-	top: 87px;
-}
-#overlay.active {
-  visibility: visible;
-}
-#overlay ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
+.topnav a.icon:hover, .topnav #menu a:hover {
+  background-color: #ddd;
 }
 
-#overlay li:hover {
-	background-color: #ACC3C3;
+.active {
+  background-color: #ffd500;
+  text-align: center;
 }
+/*-------------------------------------*/
+
 .template {
 	display: none;
 }
