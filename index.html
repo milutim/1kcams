@@ -1,63 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>***X X X***</title>
-	<link rel="icon" type="image/x-icon" href="***X X X***">
-	<link rel="stylesheet" type="text/css" href="./style/style.css">
-	<link rel="stylesheet" type="text/css" href="./style/tachyons.css">
-	
-	<meta property="og:title" content="***X X X***" />
-	<meta property="og:image" content=".***X X X***" />
-	<meta property="og:description" content="***X X X***" />
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Hiljade.kamera.rs</title>
+		<link rel="icon" type="image/x-icon" href="./assets/hiljadekamlogo-01.svg">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./style/tachyons.css">
+		<link rel="stylesheet" type="text/css" href="./style/style.css">
+		
+		<meta property="og:title" content="***X X X***" />
+		<meta property="og:image" content=".***X X X***" />
+		<meta property="og:description" content="***X X X***" />
 
-	<meta name="twitter:card" content="summary_large_image" />
-  	<meta name="twitter:site" content="@***X X X***" />
-  	<meta name="twitter:title" content="***X X X***" />
-  	<meta name="twitter:description" content="***X X X***" />
-  	<meta name="twitter:image" content="***X X X***" />
-  	<meta name="twitter:url" content="***X X X***" />
-</head>
-<body>
-	<nav class="dt w-100 border-box pa3 ph5-ns bg-yellow">
-  		<a class="link dim w-25" href="index.html" title="Home">
-    		<img src="./assets/logo.svg" class="dib" alt="Site Name">
-  		</a>
-
-		<div class="dtc v-mid dn-l">
-			
-			<input type="checkbox" id="overlay-input" />
-        	<label for="overlay-input" id="overlay-button"><span></span></label>
-          <div id="overlay">
-            <ul class="pv3 ph5-ns">
-              <li class="ph3 ph4-l pt2 pb1">
-				<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="hronologija.html" title="Hronologija">Hronologija</a>
-			  </li>
-              <li class="ph3 ph4-l pt2 pb1">
-				<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Širi kontekst">Širi kontekst</a>
-			  </li>
-			  <li class="ph3 ph4-l pt2 pb1">
-				<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Etički problemi">Etički problemi</a>
-			  </li>
-			  <li class="ph3 ph4-l pt2 pb1">
-				<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Tehničke specifikacije">Tehničke specifikacije</a>
-			  </li>
-			  <li class="ph3 ph4-l pt2 pb1">
-				<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Pravni okvir">Pravni okvir</a>
-			  </li>
-			  <li class="ph3 ph4-l pt2 pb1">
-				<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Šta da radim?">Šta da radim?</a>
-			  </li>
-			  <li class="ph3 ph4-l pt2 pb1">
-				<a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Mapiramo">Mapiramo</a>
-			  </li>
-            </ul>
-          </div>
-
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@***X X X***" />
+		<meta name="twitter:title" content="***X X X***" />
+		<meta name="twitter:description" content="***X X X***" />
+		<meta name="twitter:image" content="***X X X***" />
+		<meta name="twitter:url" content="***X X X***" />
+	</head>
+	<body>
+	<header class="topnav w-100 border-box">
+		<a href="index.html" class="active">
+		    <img src="./assets/logo.svg">
+		</a>
+		<div id="menu">
+			<a href="index.html">Home</a>
+			<a href="hronologija.html">Hronologija</a>
+			<a href="rizici.html">Pretnje</a>
+			<a href="pravo.html">Pravo</a>
+			<a href="svet.html">Svet</a>
+			<a href="mediji.html">Izvori i mediji</a>
 		</div>
-	</nav>
+		
+		<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</header>
+
 	<header>
 		<div class="cover bg-left bg-center-l w-100 min-h-400 pa3 pa5-ns" style="background-image: url(https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2019-12/Viral-Conjunctivitis-1296x728-gallery_Slide1.jpg?w=1155)">
 
@@ -186,6 +168,14 @@
 	</footer>
 
 	<script>
+		function toggleMenu() {
+		    var x = document.getElementById("menu");
+		    if (x.style.display === "block") {
+			x.style.display = "none";
+		    } else {
+			x.style.display = "block";
+		    }
+		}
 		$(window).load(function() {
 		$("body").removeClass("preload");
 		});
