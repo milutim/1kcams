@@ -163,8 +163,55 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 	font-weight: bold;
 	border-bottom: 2px solid #FFD500;
 }
-
-
-
-
+.section-title-small{
+	font-size: 1.9rem;
+	font-family: 'Playfair Display', serif;
+	color: #212121;
+	position: relative;
+}
+.checkmark:before{
+	content: "\2713";
+	font-size: 2.4rem;
+	font-family: 'Roboto', sans-serif;
+	color: #FFD500;
+	position: absolute;
+	left: -3.5rem;
+}
+.xmark:before {
+	content: "\2715";
+	font-size: 2.2rem;
+	font-family: 'Roboto', sans-serif;
+	color: #FFD500;
+	position: absolute;
+	left: -3.5rem;
+}
+.yellow-bull-list{
+	list-style: none;
+}
+.yellow-bull-list li{
+	font-size: 1.125rem;
+	letter-spacing: 0.3px;
+	line-height: 1.5;
+}
+.yellow-bull-list li:before{
+	content: "\2022";
+	color: #FFD500;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -2em;
+}
+.card-title{
+	font-size: 1.125rem;
+	color: #212121;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+.card-desc{
+	font-size: .9rem;
+	color: #4A4A4A;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	line-height: 1.4;
+}
 
