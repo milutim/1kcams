@@ -111,7 +111,7 @@ a {
 	color: #212121;
 	position: relative
 }
-.section-title::before {
+.h1:before {
 	content: "+";
 	font-size: 2.4rem;
 	font-family: 'Roboto', sans-serif;
@@ -226,7 +226,14 @@ a {
 	line-height: 1.3;
 }
 
-
+/*------------------------------*/
+footer {
+	color: white;
+	background-color: #212121
+}
+footer h1:before {
+	left: -1rem;
+}
 
 
 
