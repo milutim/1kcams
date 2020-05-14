@@ -178,21 +178,56 @@ a {
 }
 #legal-issues .yellow-bull-list li:before {
 	font-size: 24px;
-	font-weight: 900px;
+	font-weight: 900;
 	margin-left: -1em;
 }
 
-.card-title{
+.card-title {
 	font-size: 1.125rem;
 	color: #212121;
 	font-family: 'Playfair Display', serif;
 	text-align: center;
 }
-.card-desc{
+.card-desc {
 	font-size: .9rem;
 	color: #4A4A4A;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	line-height: 1.4;
 }
+.card-image {
+	position: relative;
+	text-align: center;
+}
+.card-img-arrow {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+.card-img-arrow > img {
+	
+}
+.card-pill-holder {
+	min-height: 90px;
+	text-align: center;
+}
+.card-pill {
+	font-size: .7rem;
+	background-color: #032B43;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.c-pill-label {
+	font-size: .7rem;
+	line-height: 1.3;
+}
+
+
+
+
+
 
