@@ -47,16 +47,16 @@
 		</div>
 	</section>
 
-	<div id="risks"></div>
+	<div id="countries"></div>
 	<section class="ph3 template">
 		<div class="w-main">
 			<div class="pv3 pl4-ns pt5-ns pb4-ns bt b--yellow flex flex-column flex-row-ns">
 				<div class="w-100 w-25-ns mr2 pv3-l tc">
-					<img class="risk-image" src="" style="width: 50%;">
+					<img class="country-image" src="" style="width: 50%;">
 				</div>
-				<div class="risk-details w-100 w-75-ns pv3-l">
-					<h3 class="risk-title lh-title f4 fw6"></h3>
-					<div class="risk-excerpt mv3"></div>
+				<div class="country-details w-100 w-75-ns pv3-l">
+					<h3 class="country-title lh-title f4 fw6"></h3>
+					<div class="country-excerpt mv3"></div>
 				</div>
 			</div>
 		</div>
@@ -72,36 +72,36 @@
 			  }
 			}
 		(function() {
-		    let risks = [{
+		    let countries = [{
 				image: "./assets/Flag @2x.svg",
 				title: "Sjedinjene Američke Države",
-				excerpt: "<p>Značajne tačke otpora često se nalaze u tehnološki najrazvijenijim sredinama, poput gradova Kalifornije (San Francisko, Berkli, Ouklend) i Masačusetsa (Somervil, Kembridž) gde je upotreba tehnologije prepoznavanja lica zabranjena organima javne vlasti, uključujući policiju. U drugim gradovima, kao što je Detroit, raste svest o opasnostima sistema biometrijskog nadzora po afroameričku zajednicu.</p><p>Pojedine kompanije su odlučile da ne primenjuju ovu tehnologiju pre nego što se uspostavi jasna pravna regulativa. Tako je odbor za etiku kompanije koja snabdeva opremom većinu policijskih službi u SAD, doneo odluku da neće koristiti tehnologiju poređenja lica zbog “ozbiljnih etičkih problema”.</p>"
+				excerpt: "<p>Značajne tačke otpora često se nalaze u tehnološki najrazvijenijim sredinama, poput gradova Kalifornije (<a href='https://www.nytimes.com/2019/05/14/us/facial-recognition-ban-san-francisco.html'>San Francisko</a>, <a href='https://www.mercurynews.com/2019/10/16/berkeley-bans-facial-recognition/'>Berkli</a>, <a href='http://www2.oaklandnet.com/oakca1/groups/cityadministrator/documents/standard/oak070617.pdf'>Ouklend</a>) i Masačusetsa (<a href='https://www.bostonglobe.com/metro/2019/06/27/somerville-city-council-passes-facial-recognition-ban/SfaqQ7mG3DGulXonBHSCYK/story.html'>Somervil</a>, <a href='https://www.boston.com/news/local-news/2020/01/14/cambridge-facial-recognition'>Kembridž</a>) gde je upotreba tehnologije prepoznavanja lica zabranjena organima javne vlasti, uključujući policiju. U drugim gradovima, kao što je <a href='https://www.youtube.com/watch?v=zw5xzdDiDDA'>Detroit</a>, raste svest o opasnostima sistema biometrijskog nadzora po afroameričku zajednicu.</p><br><p>Pojedine kompanije su odlučile da ne primenjuju ovu tehnologiju pre nego što se uspostavi jasna pravna regulativa. Tako je odbor za etiku kompanije koja snabdeva opremom većinu policijskih službi u SAD, doneo odluku da neće koristiti tehnologiju poređenja lica zbog “<a href='https://www.axon.com/news/ai-ethics-board-report'>ozbiljnih etičkih problema</a>”.</p>"
 			}, {
 				image: "./assets/Flag2@2x.svg",
 				title: "Kina",
-				excerpt: "<p>U saradnji sa raznim domaćim korporacijama, Kina već godinama koristi tehnologiju za prepoznavanje lica pa je ovaj sistem u mnogim višemilionskim gradovima već postao sastavni deo svakodnevnog života. Naime, vlasti su još 2015. podržale koncept “sveprisutne, potpuno povezane, uvek uključene i u potpunosti kontrolisane” mreže za video nadzor širom zemlje kao imperativ javne bezbednosti. Dve godine kasnije, izgrađena je baza podataka za prepoznavanje lica koja za nekoliko sekundi može da utvrdi identitet građana u državi koja broji preko milijardu stanovnika.</p><p>Ova tehnologija se koristi za kontrolu identiteta prilikom onlajn plaćanja, na ulazu u javne ustanove – pa čak i u škole – kao i za stalni policijski nadzor građana. Sistem nadzora se “gejmifikuje” osvajanjem i gubitkom društvenog kredita, te javnim sramoćenjem za ulične prekršaje, dok izveštaji organizacija za ljudska prava upozoravaju da se sistem koristi i za nadzor etničkih manjina, poput muslimanske zajednice Ujgura.</p>"
+				excerpt: "<p>U saradnji sa raznim domaćim korporacijama, Kina već godinama koristi tehnologiju za prepoznavanje lica pa je ovaj sistem u mnogim višemilionskim gradovima već postao sastavni deo svakodnevnog života. Naime, vlasti su još 2015. podržale koncept “sveprisutne, potpuno povezane, uvek uključene i u potpunosti kontrolisane” mreže za video nadzor širom zemlje kao imperativ javne bezbednosti. Dve godine kasnije, izgrađena je <a href='https://www.scmp.com/news/china/society/article/2115094/china-build-giant-facial-recognition-database-identify-any'>baza podataka</a> za prepoznavanje lica koja za nekoliko sekundi može da utvrdi identitet građana u državi koja broji preko milijardu stanovnika.</p><br><p>Ova tehnologija se koristi za kontrolu identiteta prilikom onlajn plaćanja, na ulazu u javne ustanove – pa čak i u škole – kao i za stalni policijski nadzor građana. Sistem nadzora se “gejmifikuje” osvajanjem i gubitkom društvenog kredita, te <a href='https://www.abc.net.au/news/2018-03-20/china-deploys-ai-cameras-to-tackle-jaywalkers-in-shenzhen/9567430'>javnim sramoćenjem</a> za ulične prekršaje, dok izveštaji organizacija za ljudska prava upozoravaju da se sistem koristi i za <a href='https://www.theguardian.com/news/2019/apr/11/china-hi-tech-war-on-muslim-minority-xinjiang-uighurs-surveillance-face-recognition'>nadzor etničkih manjina</a>, poput muslimanske zajednice Ujgura.</p>"
 			}, {
 				image: "./assets/Flag3@2x.svg",
 				title: "Ujedinjeno Kraljevstvo",
-				excerpt: "<p>U Britaniji je za manje od dve decenije drastično povećan broj kamera na nadzor: od 100 instaliranih kamera 1990. godine do preko četiri miliona u prvoj deceniji 20. veka. Kako se navodi u izveštaju organizacije “Big Brother Watch” objavljenom 2018, savremena tehnologija pametnog nadzora je ipak neuspešna: 98% identifikacija u Londonu su bile pogrešne. U Velsu je tačnost rezultata iznosila svega 9% dok su slike 2.451 neosnovano osumnjičenih osoba ostale u sistemu policije godinu dana.</p><p>S druge strane, zasad najveća pravna pobeda britanskih građana proglašena je u oktobru 2019. godine, kada je parlament podneo predlog zakona kojim bi se uspostavio moratorijum na tehnologiju prepoznavanja lica, dok bi se svako upravljanje, instaliranje i kupovina opreme za analiziranje biometrijskih podataka građana u javnom prostoru smatralo krivičnim delom.</p>"
+				excerpt: "<p>U Britaniji je za manje od dve decenije drastično povećan broj kamera na nadzor: od 100 instaliranih kamera 1990. godine do preko četiri miliona u prvoj deceniji 20. veka. Kako se navodi u izveštaju organizacije “Big Brother Watch” <a href='https://bigbrotherwatch.org.uk/campaigns/stop-facial-recognition/report/'>objavljenom 2018</a>, savremena tehnologija pametnog nadzora je ipak neuspešna: 98% identifikacija u Londonu su bile pogrešne. U Velsu je tačnost rezultata iznosila svega 9% dok su slike 2.451 neosnovano osumnjičenih osoba ostale u sistemu policije godinu dana.</p><br><p>S druge strane, zasad najveća pravna pobeda britanskih građana proglašena je u oktobru 2019. godine, kada je parlament podneo predlog zakona kojim bi se uspostavio <a href='https://publications.parliament.uk/pa/bills/lbill/2019-2019/0047/20047.pdf'>moratorijum na tehnologiju prepoznavanja lica</a>, dok bi se svako upravljanje, instaliranje i kupovina opreme za analiziranje biometrijskih podataka građana u javnom prostoru smatralo krivičnim delom.</p>"
 			}, {
 				image: "./assets/@2x.svg",
 				title: "Argentina",
-				excerpt: "<p>Slučaj jednog stanovnika Buenos Ajresa pokazao je široj javnosti u Argentini kako tehnologija za prepoznavanje lica može nevinim ljudima da sruči nevolju za vrat. Naime, čoveka je po ulasku u metro zaustavila policija jer su ga pametne kamere identifikovale kao navodnog pljačkaša za kojim se traga već 17 godina. Lažno osumnjičeni je satima ubeđivao policiju da je nevin, a onda su policajci pokušavali da “ubede” kompjuterski program. Na kraju je čovek oslobođen, a po sopstvenim rečima imao je sreće – jer je belac. U jednom sličnom incidentu, pogrešno osumnjičeni muškarac tamnije kože proveo je čitavih šest dana u pritvoru zbog pogrešne identifikacije u sistemu “pametnog” nadzora.</p>"
+				excerpt: "<p>Slučaj jednog stanovnika Buenos Ajresa pokazao je široj javnosti u Argentini kako tehnologija za prepoznavanje lica može nevinim ljudima da sruči nevolju za vrat. Naime, čoveka je po ulasku u metro zaustavila policija jer su ga <a href='https://edri.org/dangerous-by-design-a-cautionary-tale-about-facial-recognition/'>pametne kamere identifikovale</a> kao navodnog pljačkaša za kojim se traga već 17 godina. Lažno osumnjičeni je satima ubeđivao policiju da je nevin, a onda su policajci pokušavali da “ubede” kompjuterski program. Na kraju je čovek oslobođen, a po sopstvenim rečima imao je sreće – jer je belac. U jednom <a href='https://www.clarin.com/policiales/paso-semana-preso-error-policial-sistema-reconocimiento-facial_0_6KiuCu0fy.html'>sličnom incidentu</a>, pogrešno osumnjičeni muškarac tamnije kože proveo je čitavih šest dana u pritvoru zbog pogrešne identifikacije u sistemu “pametnog” nadzora.</p>"
 			}, {
 				image: "./assets/Flag5@2x.svg",
 				title: "Francuska",
-				excerpt: "<p>Regionalne vlasti na jugu Francuske dozvolile su probno postavljanje sistema za prepoznavanje lica na ulazima dve srednje škole, u okviru projekta čiji je cilj bio opremanje svih škola pametnim nadzorom. Međutim, nekoliko organizacija za ljudska prava, jedan sindikat i jedna organizacija roditelja podneli su zajednički zahtev sudu da se eksperiment zabrani jer, kako su naveli, ovaj preterano intruzivan sistem nije u skladu sa Zakonom o zaštiti podataka o ličnosti. Sud je krajem februara 2020. doneo odluku da prekine projekat regionalnih vlasti, ističući između ostalog da je sistem pametnog nadzora nesrazmeran svrsi kontrole ulaza, dok prethodna saglasnost roditelja nije validna pravna osnova jer nisu bili dovoljno upoznati sa sistemom.</p>"
+				excerpt: "<p>Regionalne vlasti na jugu Francuske dozvolile su probno postavljanje sistema za prepoznavanje lica na ulazima dve srednje škole, u okviru projekta čiji je cilj bio opremanje svih škola pametnim nadzorom. Međutim, nekoliko organizacija za ljudska prava, jedan sindikat i jedna organizacija roditelja podneli su zajednički zahtev sudu da se eksperiment zabrani jer, kako su naveli, ovaj preterano intruzivan sistem nije u skladu sa Zakonom o zaštiti podataka o ličnosti. Sud je krajem februara 2020. doneo odluku da <a href='https://www.laquadrature.net/2020/02/27/premiere-victoire-en-france-devant-la-justice-contre-la-reconnaissance-faciale/'>prekine projekat regionalnih vlasti</a>, ističući između ostalog da je sistem pametnog nadzora nesrazmeran svrsi kontrole ulaza, dok prethodna saglasnost roditelja nije validna pravna osnova jer nisu bili dovoljno upoznati sa sistemom.</p>"
 			}];
 			
-			let sectionWrapper = document.getElementById('risks');
+			let sectionWrapper = document.getElementById('countries');
 			let sectionTemplate = document.querySelector('section.template');
-			risks.forEach(risk => {
+			countries.forEach(country => {
 			    let section = sectionTemplate.cloneNode(true);
 				section.classList.remove('template');
-				section.querySelector('.risk-image').src = risk.image;
-				section.querySelector('.risk-title').innerText = risk.title;
-				section.querySelector('.risk-excerpt').innerHTML = risk.excerpt;
+				section.querySelector('.country-image').src = country.image;
+				section.querySelector('.country-title').innerText = country.title;
+				section.querySelector('.country-excerpt').innerHTML = country.excerpt;
 				
 				sectionWrapper.appendChild(section);
 			});
